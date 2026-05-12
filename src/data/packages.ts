@@ -1,4 +1,16 @@
-export const popularPackages = [
+export interface Package {
+  id: string;
+  title: string;
+  description: string;
+  testCount: number;
+  mrp: number;
+  offerPrice: number;
+  discount: string;
+  image: string;
+  isPopular?: boolean;
+}
+
+export const popularPackages: Package[] = [
   {
     id: "p1",
     title: "Aarogyam 1.1",
@@ -576,7 +588,7 @@ export const diabeticProfiles = [
     image: "",
   },
 ];
-export const allPackages = [
+export const allPackages: Package[] = [
   ...allergyPackages,
   ...bonePackages,
   ...cancerPackages,
@@ -590,7 +602,7 @@ export const allPackages = [
   ...otherProfiles,
 ];
 
-export const categoryMapping: Record<string, any[]> = {
+export const categoryMapping: Record<string, Package[]> = {
   "All": allPackages,
   "Allergy": allergyPackages,
   "Bone": bonePackages,

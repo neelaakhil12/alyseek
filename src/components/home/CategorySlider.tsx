@@ -3,12 +3,12 @@
 import React, { useRef } from "react";
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import PackageCard from "../ui/PackageCard";
-import { popularPackages } from "@/data/packages";
+import { Package } from "@/data/packages";
 
 interface CategorySliderProps {
   title: string;
   subtitle?: string;
-  packages: typeof popularPackages;
+  packages: Package[];
 }
 
 const CategorySlider = ({ title, subtitle, packages }: CategorySliderProps) => {
