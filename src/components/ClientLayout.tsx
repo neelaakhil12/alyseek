@@ -45,7 +45,7 @@ export default function ClientLayout({
       {showSplash && <SplashScreen onFinish={() => setShowSplash(false)} />}
       <div className={showSplash ? "hidden" : "block transition-opacity duration-500"}>
         <Navbar />
-        <main className="min-h-screen pt-20 overflow-x-hidden">{children}</main>
+        <main className="min-h-screen pt-28 overflow-x-hidden">{children}</main>
         <Footer />
       </div>
     </CartProvider>

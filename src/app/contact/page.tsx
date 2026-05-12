@@ -105,15 +105,15 @@ const ContactPage = () => {
           {/* Contact Details */}
           <div className="space-y-6" data-aos="fade-left">
             {contactMethods.map((method, i) => (
-              <div key={i} className="bg-white p-8 rounded-[2.5rem] border border-gray-50 shadow-soft hover:shadow-premium transition-all">
-                <div className="flex items-center gap-6">
-                  <div className="w-14 h-14 bg-primary/5 rounded-2xl flex items-center justify-center text-primary shrink-0">
-                    <method.icon className="w-7 h-7" />
+              <div key={i} className="bg-white p-6 md:p-8 rounded-[2.5rem] border border-gray-50 shadow-soft hover:shadow-premium transition-all">
+                <div className="flex items-center gap-4 md:gap-6">
+                  <div className="w-12 h-12 md:w-14 md:h-14 bg-primary/5 rounded-2xl flex items-center justify-center text-primary shrink-0">
+                    <method.icon className="w-6 h-6 md:w-7 md:h-7" />
                   </div>
-                  <div>
-                    <h3 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">{method.title}</h3>
-                    <p className="text-lg font-black text-text-dark mb-1">{method.value}</p>
-                    <p className="text-sm text-gray-500">{method.description}</p>
+                  <div className="min-w-0 flex-1">
+                    <h3 className="text-[10px] md:text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">{method.title}</h3>
+                    <p className="text-base md:text-lg font-black text-text-dark mb-1 break-all md:break-normal">{method.value}</p>
+                    <p className="text-xs md:text-sm text-gray-500 truncate md:whitespace-normal">{method.description}</p>
                   </div>
                 </div>
               </div>
