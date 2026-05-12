@@ -4,12 +4,14 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Search, ShoppingCart, User, Phone, Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { usePathname } from "next/navigation";
 import { useCart } from "@/context/CartContext";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { totalItems } = useCart();
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -52,11 +54,14 @@ const Navbar = () => {
               key={link.name}
               href={link.href}
               className={cn(
-                "font-medium text-sm transition-colors hover:text-primary",
-                isScrolled ? "text-text-dark" : "text-text-dark"
+                "text-sm transition-all hover:text-primary relative py-1",
+                pathname === link.href ? "font-bold text-primary" : "font-medium text-text-dark"
               )}
             >
               {link.name}
+              {pathname === link.href && (
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary rounded-full" />
+              )}
             </Link>
           ))}
         </nav>
@@ -130,7 +135,10 @@ const Navbar = () => {
             <Link
               key={link.name}
               href={link.href}
-              className="text-lg font-medium text-text-dark py-2 border-b border-gray-50"
+              className={cn(
+                "text-lg transition-all py-2 border-b border-gray-50 flex items-center justify-between",
+                pathname === link.href ? "font-bold text-primary pl-2 border-l-4 border-l-primary" : "font-medium text-text-dark"
+              )}
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {link.name}
