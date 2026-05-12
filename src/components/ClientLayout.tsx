@@ -18,10 +18,21 @@ export default function ClientLayout({
   useEffect(() => {
     AOS.init({
       duration: 800,
-      once: true,
+      once: false, // Changed to false to allow re-triggering during testing
       easing: "ease-out-cubic",
+      offset: 100,
+      delay: 0,
     });
   }, []);
+
+  useEffect(() => {
+    if (!showSplash) {
+      // Small delay to ensure DOM is rendered and visible before refreshing AOS
+      setTimeout(() => {
+        AOS.refresh();
+      }, 100);
+    }
+  }, [showSplash]);
 
   return (
     <CartProvider>
