@@ -8,7 +8,7 @@ interface PageHeaderProps {
 
 const PageHeader = ({ title, subtitle, gradient = true }: PageHeaderProps) => {
   return (
-    <section className={`py-16 md:py-24 ${gradient ? "bg-gradient-to-b from-primary/5 to-transparent" : "bg-white"}`}>
+    <section className={`py-10 md:py-24 ${gradient ? "bg-gradient-to-b from-primary/5 to-transparent" : "bg-white"}`}>
       <div className="container mx-auto px-4 text-center">
         <h1 className="text-4xl md:text-5xl font-bold text-text-dark mb-6" data-aos="fade-up">
           {title}

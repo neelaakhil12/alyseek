@@ -27,19 +27,19 @@ const TestsPage = () => {
   }, [activeCategory, searchQuery]);
 
   return (
-    <div className="bg-gray-50 min-h-screen pt-28">
+    <div className="bg-gray-50 min-h-screen">
       {/* Header */}
       <div className="bg-white border-b border-gray-100 shadow-soft">
-        <div className="container mx-auto px-4 py-12">
-          <div className="flex items-center gap-3 mb-3">
-            <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+        <div className="container mx-auto px-4 py-8 md:py-12">
+          <div className="flex flex-col md:flex-row md:items-center gap-3 mb-3">
+            <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
               <FlaskConical className="w-5 h-5 text-primary" />
             </div>
-            <h1 className="text-4xl font-black text-text-dark">
+            <h1 className="text-3xl md:text-4xl font-black text-text-dark">
               Diagnostic Tests & Packages
             </h1>
           </div>
-          <p className="text-gray-500 font-medium ml-13 pl-1">
+          <p className="text-gray-500 font-medium md:ml-13 md:pl-1 text-sm md:text-base">
             Explore our comprehensive range of diagnostic tests across all health categories.
           </p>
 
