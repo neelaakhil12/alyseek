@@ -41,7 +41,7 @@ const SplashScreen = ({ onFinish }: { onFinish: () => void }) => {
         <img
           src="/logo.png"
           alt="Alyseek Logo"
-          className={`w-full h-full object-contain transition-all duration-1000 ease-out relative z-10 ${isRevealed ? 'blur-0 scale-110 opacity-100' : 'blur-md scale-90 opacity-80'}`}
+          className={`w-full h-full object-contain mix-blend-multiply transition-all duration-1000 ease-out relative z-10 ${isRevealed ? 'blur-0 scale-110 opacity-100' : 'blur-sm scale-90 opacity-80'}`}
         />
       </div>
 

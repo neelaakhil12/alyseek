@@ -87,20 +87,16 @@ export default function Home() {
         subtitle="Our most trusted and frequently selected diagnostic profiles for general wellness."
         packages={popularPackages}
       />
-      <CategorySlider 
-        title="Aarogyam Series" 
-        subtitle="Our most popular comprehensive health checkup packages for proactive wellness."
-        packages={popularPackages.filter(p => p.title.includes("Aarogyam"))}
-      />
+
       
       <HealthCategories />
       
       <HowItWorks />
       
       <CategorySlider 
-        title="Thyrocare Specialist Profiles" 
+        title="Alyseek Specialist Profiles" 
         subtitle="Targeted tests for specific health concerns like Diabetes, Heart, and Vitamin deficiencies."
-        packages={popularPackages.filter(p => !p.title.includes("Aarogyam"))}
+        packages={popularPackages}
       />
 
       <WhyChooseUs />

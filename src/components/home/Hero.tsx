@@ -41,13 +41,13 @@ const Hero = () => {
               Health Checkups Made Simple
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-text-dark leading-tight">
-              Aarogyam <br />
-              <span className="gradient-text">Health Checkups</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-dark leading-tight">
+              Book Diagnostic <br />
+              <span className="gradient-text">Tests at Home</span>
             </h1>
             
             <p className="text-lg md:text-xl text-gray-500 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              Book NABL certified diagnostic tests and Aarogyam full body checkups online with free home sample collection.
+              NABL certified labs · Free home sample collection · Reports in 24 hrs. Alyseek makes preventive healthcare simple, affordable, and accessible.
             </p>
 
             {/* Prominent Search Bar */}
@@ -75,10 +75,10 @@ const Hero = () => {
                 <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link 
-                href="/packages" 
+                href="/tests" 
                 className="w-full sm:w-auto bg-white border-2 border-primary text-primary px-8 py-4 rounded-full font-bold text-lg hover:bg-primary/5 transition-all flex items-center justify-center"
               >
-                Aarogyam Packages
+                Browse All Packages
               </Link>
             </div>
 
@@ -112,9 +112,9 @@ const Hero = () => {
           <div className="flex-1 relative hidden lg:block" data-aos="fade-left">
             <div className="relative z-10">
               <img 
-                src="https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?t=st=1715433000~exp=1715436600~hmac=..." 
-                alt="Healthcare Professional"
-                className="w-full max-w-xl mx-auto drop-shadow-2xl"
+                src="/hero-doctor.png"
+                alt="Doctor collecting blood sample at patient's home"
+                className="w-full max-w-xl mx-auto drop-shadow-2xl rounded-3xl object-cover"
               />
               
               {/* Floating Cards - hidden on mobile, visible on lg+ */}

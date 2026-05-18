@@ -22,8 +22,12 @@
   --foreground: #064E3B;
 }
 
-* {
+html {
   scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {

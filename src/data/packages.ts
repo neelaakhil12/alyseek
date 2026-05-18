@@ -13,7 +13,7 @@ export interface Package {
 export const popularPackages: Package[] = [
   {
     id: "p1",
-    title: "Aarogyam 1.1",
+    title: "Alyseek Full Body 1.1",
     description: "Basic screening including 60+ parameters for vital organs and blood profile.",
     testCount: 62,
     mrp: 1500,
@@ -24,7 +24,7 @@ export const popularPackages: Package[] = [
   },
   {
     id: "p2",
-    title: "Aarogyam 1.3",
+    title: "Alyseek Full Body 1.3",
     description: "Advanced full body checkup with 90+ tests including Vitamin and Iron profile.",
     testCount: 94,
     mrp: 2500,
@@ -35,7 +35,7 @@ export const popularPackages: Package[] = [
   },
   {
     id: "p3",
-    title: "Aarogyam 1.7",
+    title: "Alyseek Full Body 1.7",
     description: "Comprehensive screening for vital organs, hormones, and cardiac risk markers.",
     testCount: 104,
     mrp: 4500,
@@ -46,7 +46,7 @@ export const popularPackages: Package[] = [
   },
   {
     id: "p4",
-    title: "Aarogyam Tax Saver",
+    title: "Alyseek Tax Saver",
     description: "Complete body checkup eligible for tax benefits under Section 80D.",
     testCount: 110,
     mrp: 5000,
@@ -267,7 +267,7 @@ export const fitnessPackages = [
 export const fullBodyPackages = [
   {
     id: "fb1",
-    title: "Aarogyam Tax Saver - Advanced",
+    title: "Alyseek Tax Saver - Advanced",
     description: "Includes 136 tests and is a one-stop-solution for tax saving and health.",
     testCount: 136,
     mrp: 5499,
@@ -277,7 +277,7 @@ export const fullBodyPackages = [
   },
   {
     id: "fb2",
-    title: "Aarogyam X Plus Profile",
+    title: "Alyseek X Plus Profile",
     description: "A complete health checkup package with 164 parameters for in-depth analysis.",
     testCount: 164,
     mrp: 8469,
@@ -297,7 +297,7 @@ export const fullBodyPackages = [
   },
   {
     id: "fb4",
-    title: "Aarogyam Women 3",
+    title: "Alyseek Women 3",
     description: "Tailor-made for women, featuring 110 parameters for comprehensive wellness.",
     testCount: 110,
     mrp: 4399,
@@ -307,7 +307,7 @@ export const fullBodyPackages = [
   },
   {
     id: "fb5",
-    title: "Aarogyam Men 3",
+    title: "Alyseek Men 3",
     description: "Curated for men's health needs with 107 critical parameters.",
     testCount: 107,
     mrp: 4564,
@@ -317,7 +317,7 @@ export const fullBodyPackages = [
   },
   {
     id: "fb6",
-    title: "Aarogyam Basic",
+    title: "Alyseek Basic",
     description: "Fundamental preventive care package covering 68 parameters.",
     testCount: 68,
     mrp: 2200,
